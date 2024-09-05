@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Tab icon and title -->
+	<title>CSC3160 Fundamentals of Speech and Language Processing/MDS6002 Natural Language Processing</title>
+
+	<!-- bootstrap template -->
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/bootstrap-theme.min.css">
+
+	<!-- Google fonts -->
+	<link href="./css/font.css" rel="stylesheet" type="text/css">
+
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+
+	<div id="header">
+		<h1>CSC3160 Fundamentals of Speech and Language Processing</h1>
+		<h1> MDS6002 Natural Language Processing</h1>
+		<div class="text-center">
+			<h4>Spring 2023</h4>
+		</div>
+	</div>
+
+	<div class="sechighlight">
+		<div class="container sec">
+			<div id="coursedesc">
+				The difference between speech and language processing and other data processing is the use of knowledge
+				of language. In this course, we will study how to describe, process and compute different levels of
+				language knowledge including Phonetics and Phonology, Morphology, Syntax, Semantics, and how the
+				language knowledge is used in speech and language applications such as named entities recognition,
+				information extraction, question answering, speech recognition, and speech synthesis.
+			</div>
+		</div>
+	</div>
+
+	<div class="container sec">
+		<div class="row">
+			<h2><b>Teaching team</b></h2>
+			<hr />
+			<div class="col-md-2">
+				<div class="instructor">
+					<div class="instructorphoto"><img src="./imgs/photo_1205.jpeg"></div>
+					<div>Instructor <br> <a href="https://drwuz.com" target="_blank">Zhizheng Wu</a></div>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div class="instructor">
+					<div class="instructorphoto"><img src="./imgs/chenxi.jpeg"></div>
+					<div>TA <br> <a href="https://chenx17.github.io/" target="_blank">Xi Chen</a></div>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div class="instructor">
+					<div class="instructorphoto"><img src="./imgs/xueyao.jpeg"></div>
+					<div>TA <br><a href="https://www.zhangxueyao.com/" target="_blank">Xueyao Zhang</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="sechighlight">
+		<div class="container sec">
+			<h2><b>Poster Session</b></h2>
+			<hr />
+			<div id="coursedesc">
+				<p> A final project poster session is planned by the end of the course (tentatively May 21st 2023). This
+					is to provide students the opportunities to connect with speech and language research/industry
+					community.
+				</p>
+				<p>Anyone from the CUHK-Shenzhen and speech and language technology community are welcome to join. More
+					details will be provided when it is close to the event. Feel free to reach out!</p>
+				<br>
+				<br>
+				<p>Here is the <a href="https://mp.weixin.qq.com/s/S6pJjM_aBnRFvR40IdAsmA">review</a> of the poster session event, with invited talks from industry.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container sec">
+		<h2><b>Logistics</b></h2>
+		<hr />
+		<div id="coursedesc">
+			<p>
+			<ul>
+				<li> <b>Lectures:</b> are on Tuesday/Thursday 4:00PM - 5:20PM in TB103. Note: lectures will be remote
+					for the first two weeks, and hybrid afterwards. The Zoom link is posted on BB.</li>
+				<li> <b>Office hours</b> </li>
+				<ul>
+					<li>Zhizheng Wu: Thu 2:30-3:30 PM. Daoyuan Building 321b</li>
+					<li>Xi Chen: Wed 7-9PM. SDS Research Lab (4th Floor, Zhi Xin Building) Seat No.100</li>
+					<li>Xueyao Zhang: Wed 7-9PM. SDS Research Lab (4th Floor, Zhi Xin Building) Seat No.78</li>
+				</ul>
+				<li> <b>Contact:</b> If you have any question, please reach out to us via email or post it to BB.</li>
+				<!-- <a href="https://join.slack.com/t/csc3160mds6002/shared_invite/zt-1mnxl1sia-Kyqs7RsoMLAvsv8nHSOCHg">Slack</a>. Anyone is welcome to join the slack channel for discussion. -->
+			</ul>
+			</p>
+		</div>
+	</div>
+
+	<div class="sechighlight">
+		<div class="container sec">
+			<h2><b>Course Information</b></h2>
+			<hr />
+			<div id="coursedesc">
+				<p>
+					This course is designed as the first course for students who are interested in speech and language
+					technology. The first half of the course focuses on the fundamentals and introduces tools for
+					students to use, and the second half emphasises on applications, giving students the opportunity to
+					know how speech and language technology could impact human life.
+
+					In particular, the topics include:
+				<ul>
+					<li> Understanding human speech: spectrogram, fundamental frequency, formant, etc </li>
+					<li> Human sounds and their organization </li>
+					<li> Words and their relationship to other words </li>
+					<li> Syntax: Structure of sentences </li>
+					<li> Text processing and regular expressions </li>
+					<li> Language models </li>
+					<li> Embedding: Representations of the meaning of words </li>
+					<li> Word classifications and Named entities recognition </li>
+					<li> Applications: speech recognition, speech synthesis, machine translation, chatbot, etc</li>
+				</ul>
+
+				</p>
+			</div>
+
+			<h3>Prerequisites</h3>
+			<ul>
+				<li><b>Proficiency in LaTex: </b> All the reports need to be written by using LaTex. A template will be
+					provided. If you are not familiar with LaTex, please learn from the <a
+						href="https://www.overleaf.com/learn/latex/Tutorials" target="_blank">tutorial</a> in advance.
+				</li>
+				<li><b>Proficiency in GitHub: </b> All the source codes need to be submitted in GitHub. </li>
+				<li><b>Proficiency in Python:</b> All the assignments will be in Python (using Numpy and <a
+						href="https://pytorch.org/" target="_blank">PyTorch</a>). </li>
+				<li><b>Basic machine learning knowledge: </b> It is possible to take this course without any machine
+					learning knowledge, however, the course will be easier if you have foundations of machine learning.
+				</li>
+				<li><b>Basic Concepts of probability: </b> It will be easier for you to understand some lectures if you
+					know basics of probability. </li>
+			</ul>
+
+			<h3>Textbooks</h3>
+			<p>
+				Recommended Books:
+			<ul id="textbooks">
+				<li><a href="https://web.stanford.edu/~jurafsky/slp3/" target="_blank">Speech and Language Processing
+						(3rd ed. draft)</a>, by Dan Jurafsky and James H. Martin</li>
+			</ul>
+			</p>
+
+			<h3>Grading Policy (CSC3160/MDS6002)</h3>
+			<h4>Assignments (30%)</h4>
+			<ul>
+				<li><b>Assignment 1 (12%)</b>: Speech alignment and synthesis</li>
+				<li><b>Assignment 2 (8%)</b>: Text processing</li>
+				<li><b>Assignment 3 (10%)</b>: Word embedding and classification</li>
+			</ul>
+			<h4>Midterm exam (25%)</h4>
+			<p>We will have a mid-term exam on March 9th 2023. The scope of the mid-term exam is from lecture 1 to
+				lecture 12. </p>
+
+			<h4>Final project (40%)</h4>
+			<p>You need to write a project proposal (2 pages) and a project report (max 6 pages) for the final project.
+				Here is the <a href="https://www.overleaf.com/read/fvhykwvngdwz">report template</a>. You are also
+				expected to report project milestones and make a project poster presentation. After the final project
+				deadline, feel free to make your project open source.</p>
+			<ul>
+				<li><b>Project proposal (2%)</b>: Use <a href="https://www.overleaf.com/read/cpcnkgcdsymc">this
+						template</a> to write a 2-page proposal. The proposal should include the problem you are trying
+					to solve, why the problem is important, interesting or difficult. Please also include the papers you
+					plan to read and the high-level idea of your solution to the problem.</li>
+				<li><b>Project milestone (2%)</b>: Use the provided templates <a
+						href="https://www.overleaf.com/read/pcjzgwyywmpj">[Milestone1]</a> <a
+						href="https://www.overleaf.com/read/jzvbfmpgyzch">[Milestone2]</a> to write project milestone
+					reports. Each project milestone report can be an one-page report, containing what you have done in
+					reading and coding. You are expected to include the git pull request ID or commit ID in the
+					milestone report.</li>
+				<li><b>Project poster (5%)</b>: A template will be provided for the poster presentation.</li>
+				<ul>
+					<li><b>Expert rating (4%)</b>: Your poster presentation will be rated by at least 3 experts
+						(professors or scientists from industry). The average rating will be the final credit. </li>
+					<li><b>Peer review (1%)</b>: Each student provides constructive feedback to other 4 posters. The
+						contructive feedback in written will be rated and shared with other students. </li>
+				</ul>
+				<li><b>Code reproducibility (1%)</b>: Visual inspection of code quality and readability.</li>
+				<li><b>Project report (30%)</b>: The project report will be publicly available after the final poster
+					session. Please let us know if you don't wish so.</li>
+				<ul>
+					<li><b>Originality and creativity (2%)</b>: Original and creative ideas are encouraged. </li>
+					<li><b>Reference to prior work (3%)</b>: Cite existing related work, and discuss the motivation on
+						why you work this project and your algorithm or approach. Even you are reproducing a published
+						paper, you should have your own motivation. </li>
+					<li><b>Technical correctness (4%)</b>: Present your algorithms or systems for your project. Provide
+						key information for reviewers to judge whether it is technically correct. </li>
+					<li><b>Experimental validation (4%)</b>: Present your experimental setups, and experiments
+						conducted. Discuss the motivation of the designed experimental setups. Describe the project
+						evaluation metrics and present details to understand your evaluation. </li>
+					<li><b>Analysis quality (6%)</b>: Report quantitative results and include qualitative evaluation.
+						Analyze and understand your system by inspecting key outputs and intermediate results. Discuss
+						how it works, when it succeeds and when it fails, and try to interpret why it works and why not.
+					</li>
+					<li><b>Clarity in writing (3%)</b>: The report is written in a precise and concise manner so the
+						report can be easily understood. </li>
+					<li><b>Overall quality of report (5%)</b>: This is an overall evaluation of the final project
+						report, including all dimensions: writing, creativity, convincing experiments and analysis.
+					</li>
+					<li><b>Peer review (3%)</b>: Each student writes constructive reviews to six other reports. Each
+						review is worth 0.5%. </li>
+					<li><b>Project bonus (2%)</b>: If you submit the project report by the early submission due date, 2%
+						bonus credit will be entitled. However, your project credit is capped at 40%.</li>
+					<li><b>Competition bonus (2%)</b>: If you use the final project to participate in a startup pitch
+						competition, you could get 2% credit if you receive positve feedback. However, you need to get
+						approval from the teaching team in advance. Also, your project credit is capped at 40%.</li>
+				</ul>
+
+			</ul>
+			<h4>Participation (5%)</h4>
+			<p>Here are some ways to earn the participation credit, which is capped at 5%. </p>
+			<ul>
+				<li><b>Attending Guest lectures</b>: In the second half of the course, we have four invited speakers. We
+					encourage students to attend the guest lectures and participate in Q&A. All students get 0.75% per
+					guest lecture (in total 3%) for either attending in person, or by writing a guest lecture report if
+					they attend remotely or watch the recording. </li>
+				<li><b>Completing feedback surveys</b>: We will send out two feedback surveys during the semester to
+					improve the course. All students get 0.5% per survey (in total 1%) for completing the surveys.</li>
+				<li><b>Course and Teaching Evaluation (CTE)</b>: The school will send requests for CTE to all students.
+					The CTE is worth 1% credit.</li>
+				<!-- 				<li><b>Slack participation</b>: The top 10 contributors (10 from CSC3100 and 10 from MDS6002) to slack will get 1%; others will get credit in propotion to the 10th contributor. </li>
+ -->
+				<li><b>Volunteer credit (1%)</b>: TAs/instuctor can nominate students for a volunteer credit for those
+					who help the poster session organization, or help answer questions from other students (not writing
+					assignments). </li>
+			</ul>
+
+			<h3>Late Policy</h3>
+			<p>The penalty is 0.5% off the final course grade for each late day.</p>
+		</div>
+	</div>
+
+
+	<div class="container sec">
+		<h2><b>Schedule</b></h2>
+		<hr />
+		<table class="table">
+			<tbody>
+				<tr class="active">
+					<th nowrap>Date</th>
+					<th>Lecture Description</th>
+					<th>Readings</th>
+					<th nowrap>Lecture Note</th>
+					<th>Events/Deadlines</th>
+				</tr>
+
+				<tr>
+					<td>Jan 4</td>
+					<td>Tutorial 0: GitHub, LaTeX, and Colab</td>
+					<td><a href="https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes">Learn LaTeX in 30
+							minutes</a><br>
+						<a href="https://colab.research.google.com/">Colab official tutorial</a> <br>
+						<a href="https://docs.github.com/en/get-started/quickstart/hello-world">Official tutorials of
+							GitHub</a>
+					</td>
+					<td nowrap>[<a href="./materials/tutorials/Tut0-GitHub-LaTeX-Colab.pdf">Slides</a>]</td>
+					<td>Self-study</td>
+				</tr>
+
+				<tr>
+					<td>Jan 5</td>
+					<td>Lecture 1: Introduction and course overview</td>
+					<td> </td>
+					<td nowrap>[<a href="./materials/lecture_notes/Lecture_1_Introduction.pdf">Slides</a>] <br> [<a
+							href="https://cuhko365-my.sharepoint.com/:f:/g/personal/wuzhizheng_cuhk_edu_cn/EkWiGYtWog5KiDVKJzwUo6YBG80UgOEkmvZk27aPbzYx5g?e=ciFnnG">Video</a>]
+					</td>
+					<td> </td>
+				</tr>
+
+				<tr>
+					<td>Jan 10</td>
+					<td>Lecture 2: Machine learning in a nutshell</td>
+					<td> <a href="https://developer.nvidia.com/blog/deep-learning-nutshell-core-concepts/">Deep Learning
+							in a Nutshell: Core Concepts</a> <br> <a
+							href="https://mitsloan.mit.edu/ideas-made-to-matter/machine-learning-explained">Machine
+							learning, explained</a></td>
+					<td>[<a href="./materials/lecture_notes/Lecture_2_Machine_learning.pdf">Slides</a>] <br> [<a
+							href="https://cuhko365-my.sharepoint.com/:f:/g/personal/wuzhizheng_cuhk_edu_cn/EkWiGYtWog5KiDVKJzwUo6YBG80UgOEkmvZk27aPbzYx5g?e=ciFnnG">Video</a>]
+					</td>
+					<td> </td>
+				</tr>
+
+				<tr class="success">
+					<td nowrap>Jan 11</td>
+					<td>Tutorial 1: PyTorch</td>
+					<td><a href="https://pytorch.org/tutorials/beginner/basics/quickstart_tutorial.html">PyTorch
+							Quickstarts</a><br><a href="https://pytorch.org/get-started/locally/">PyTorch
+							Installation</a></td>
+					<td>
+						[<a href="./materials/tutorials/Tut1-PyTorch.pdf">Slides</a>]<br>
+						[<a
+							href="https://cuhko365-my.sharepoint.com/:v:/g/personal/222042021_link_cuhk_edu_cn/EWB7I5yqp9NLtkgaHsWFSJMB7USvic0K8HW4NGIMp7Qllg?e=eBZ4Ko">Video</a>]<br>
+						[<a
+							href="https://colab.research.google.com/drive/1_dpTtjt91Gw1u80K5hPQp8SdH0ir_OjA?usp=sharing">Colab</a>]
+					</td>
+					<td> </td>
+				</tr>
+
+				<tr>
+					<td>Jan 12</td>
+					<td>Lecture 3: Understanding sound and acoustics</td>
+					<td><a href="https://www.animations.physics.unsw.edu.au/jw/sound-pitch-loudness-timbre.htm">Pitch,
+							loudness and timbre</a><br><a
+							href="https://newt.phys.unsw.edu.au/jw/sound.spectrum.html">What is a Sound Spectrum?</a>
+					</td>
+					<td>[<a href="./materials/lecture_notes/Lecture_3_Sound_acoustic.pdf">Slides</a>] <br> [<a
+							href="./materials/lecture_notes/Lecture_3_sound/index.html">HTML</a>] <br> [<a
+							href="https://cuhko365-my.sharepoint.com/:f:/g/personal/wuzhizheng_cuhk_edu_cn/EkWiGYtWog5KiDVKJzwUo6YBG80UgOEkmvZk27aPbzYx5g?e=ciFnnG">Video</a>]<br>
+						[<a
+							href="https://github.com/SLPcourse/SLPcourse.github.io/blob/main/materials/lecture_notes/code">Code</a>]
+					</td>
+					<td><b>Assignment 1 <font color="green">out</font></b> </td>
+				</tr>
+
+				<tr class="success">
+					<td>Jan 15</td>
+					<td>Tutorial 2: TorchAudio (by Torchaudio team)</td>
+					<td> <a href="https://pytorch.org/audio/stable/index.html">TorchAudio Documentation</a></td>
+					<td>[<a href="./materials/tutorials/Tut2_TorchAudio.pdf">Slides</a>] <br> [<a
+							href="https://cuhko365-my.sharepoint.com/:f:/g/personal/wuzhizheng_cuhk_edu_cn/EkWiGYtWog5KiDVKJzwUo6YBG80UgOEkmvZk27aPbzYx5g?e=ciFnnG">Video</a>]
+					</td>
+					<td> 10:00am via zoom </td>
+				</tr>
+
+				<tr>
+					<td>Jan 17</td>
+					<td>Lecture 4: Understanding human speech</td>
+					<td><a href="https://newt.phys.unsw.edu.au/jw/voice.html">Voice Acoustics: an introduction</a><br><a
+							href="https://speechprocessingbook.aalto.fi/index.html">Introduction to Speech
+							Processing</a></td>
+					<td>[<a href="./materials/lecture_notes/Lecture_4_Understanding_speech.pdf">Slides</a>] <br> [<a
+							href="https://cuhko365-my.sharepoint.com/:f:/g/personal/wuzhizheng_cuhk_edu_cn/EkWiGYtWog5KiDVKJzwUo6YBG80UgOEkmvZk27aPbzYx5g?e=ciFnnG">Video</a>]<br>
+						[<a
+							href="https://github.com/SLPcourse/SLPcourse.github.io/blob/main/materials/lecture_notes/code">Code</a>]
+					</td>
+					<td> </td>
+				</tr>
+
+				<tr>
+					<td>Feb 9</td>
+					<td>Lecture 5: Human sounds and their organization</td>
+					<td><a href="https://web.stanford.edu/~jurafsky/slp3/25.pdf">Chapter 25: Phonetics</a></td>
+					<td>[<a href="./materials/lecture_notes/Lecture_5_phonetics.pdf">Slides</a>] <br> [<a
+							href="https://cuhko365-my.sharepoint.com/:f:/g/personal/wuzhizheng_cuhk_edu_cn/EkWiGYtWog5KiDVKJzwUo6YBG80UgOEkmvZk27aPbzYx5g?e=ciFnnG">Video</a>]
+					</td>
+					<td> </td>
+				</tr>
+
+				<tr>
+					<td>Feb 14</td>
+					<td>Lecture 6: Text processing and regular expressions</td>
+					<td><a href="https://web.stanford.edu/~jurafsky/slp3/2.pdf">Chapter 2: Regular Expressions, Text
+							Normalization, Edit Distance</a></td>
+					<td>[<a href="./materials/lecture_notes/Lecture_6_Text_processing.pdf">Slides</a>] <br> [<a
+							href="https://cuhko365-my.sharepoint.com/:f:/g/personal/wuzhizheng_cuhk_edu_cn/EkWiGYtWog5KiDVKJzwUo6YBG80UgOEkmvZk27aPbzYx5g?e=ciFnnG">Video</a>]
+					</td>
+					<td><b>Assignment 2 <font color="green">out</font></b><br><b>Assignment 1 <font color="red">due
+								(11:59pm)</font></b></td>
+				</tr>
+
+				<tr class="success">
+					<td>Feb 15</td>
+					<td>Tutorial 3: Text processing</td>
+					<td><a href="https://docs.python.org/3/library/re.html">Python Regular Expression
+							Documentation</a><br><a href="https://www.nltk.org/howto/tokenize.html">NLTK
+							Tokenize Documentation</a></td>
+					<td>[<a href="./materials/tutorials/Tut3_TextProcessing.pdf">Slides</a>] <br> [<a
+							href="https://cuhko365-my.sharepoint.com/:v:/g/personal/222043002_link_cuhk_edu_cn/EV4yKn5BALtJhEHWTUj01bsBI5uwMVH97OZkmWvpxuP9xw?e=zGpBOM">Video</a>]<br>[<a
+							href="https://colab.research.google.com/drive/1IKPG0tLZwvmM8lNVK3ddZ3yYp-35Ky1Y?usp=sharing">Colab</a>]
+					</td>
+					<td> </td>
+				</tr>
+
+				<tr class="success">
+					<td>Feb 15</td>
+					<td>Project Release</td>
+					<td>
+						<a href="https://github.com/SLPcourse/Singing-Voice-Conversion">Singing Voice Conversion
+							Project</a><br>
+						<a href="https://github.com/SLPcourse/Detecting-Generated-Abstract">Detecting Generated Abstract
+							Project</a><br>
+						<a href="https://github.com/SLPcourse/Voice-Spoofing-Detection">Voice Spoofing Detection
+							Project</a>
+					</td>
+					<td>[<a href="./materials/tutorials/Project.pdf">Slides</a>] <br> [<a
+							href="https://cuhko365-my.sharepoint.com/:v:/g/personal/222042021_link_cuhk_edu_cn/EQZ5H7mFY-9CmpfBRkH41w4Bi4DakZ2-IFqbu9TQAcJcPw?e=jE5sN1">Video</a>]
+					</td>
+					<td> </td>
+				</tr>
+
+
+				<tr>
+					<td>Feb 16</td>
+					<td>Lecture 7: Words and their relationship to other words</td>
+					<td><a href="https://web.stanford.edu/~jurafsky/slp3/8.pdf">Chapter 8: Sequence Labeling for Parts
+							of Speech and Named Entities</a></td>
+					<td>[<a href="./materials/lecture_notes/Lecture_7_Words.pdf">Slides</a>] <br> [<a
+							href="https://cuhko365-my.sharepoint.com/:f:/g/personal/wuzhizheng_cuhk_edu_cn/EkWiGYtWog5KiDVKJzwUo6YBG80UgOEkmvZk27aPbzYx5g?e=ciFnnG">Video</a>]
+					</td>
+					<td> </td>
+				</tr>
+
+				<tr>
+					<td>Feb 21</td>
+					<td>Lecture 8: Syntax: Structure of sentences</td>
+					<td> </td>
+					<td>[<a href="./materials/lecture_notes/Lecture_8_Syntax.pdf">Slides</a>] <br> [<a
+							href="https://cuhko365-my.sharepoint.com/:f:/g/personal/wuzhizheng_cuhk_edu_cn/EkWiGYtWog5KiDVKJzwUo6YBG80UgOEkmvZk27aPbzYx5g?e=ciFnnG">Video</a>]
+					</td>
+					<td></td>
+				</tr>
+
+				<tr>
+					<td>Feb 23</td>
+					<td>Lecture 9: Language models</td>
+					<td><a href="https://web.stanford.edu/~jurafsky/slp3/3.pdf">Chapter 3: N-gram Language
+							Models</a><br><a href="https://web.stanford.edu/~jurafsky/slp3/7.pdf">Chapter 7: Neural
+							Networks and Neural Language Models</a></td>
+					<td>[<a href="./materials/lecture_notes/Lecture_9_Language_models.pdf">Slides</a>] <br> [<a
+							href="https://cuhko365-my.sharepoint.com/:f:/g/personal/wuzhizheng_cuhk_edu_cn/EkWiGYtWog5KiDVKJzwUo6YBG80UgOEkmvZk27aPbzYx5g?e=ciFnnG">Video</a>]
+					</td>
+					<td><b>Assignment 2 <font color="red">due (11:59pm)</font></b></td>
+				</tr>
+
+				<tr>
+					<td>Feb 28</td>
+					<td>Lecture 10: Language models</td>
+					<td><a href="https://web.stanford.edu/~jurafsky/slp3/3.pdf">Chapter 3: N-gram Language
+							Models</a><br><a href="https://web.stanford.edu/~jurafsky/slp3/7.pdf">Chapter 7: Neural
+							Networks and Neural Language Models</a><br><a
+							href="https://jalammar.github.io/illustrated-transformer/">The Illustrated Transformer</a>
+					</td>
+					<td>[<a href="./materials/lecture_notes/Lecture_10_Language_models.pdf">Slides</a>] <br> [<a
+							href="https://cuhko365-my.sharepoint.com/:f:/g/personal/wuzhizheng_cuhk_edu_cn/EkWiGYtWog5KiDVKJzwUo6YBG80UgOEkmvZk27aPbzYx5g?e=ciFnnG">Video</a>]
+					</td>
+					<td> </td>
+				</tr>
+
+				<tr>
+					<td>Mar 2</td>
+					<td>Lecture 11: Embedding: Representations of the meaning of words</td>
+					<td><a href="https://web.stanford.edu/~jurafsky/slp3/6.pdf">Chapter 6: Vector Semantics and
+							Embeddings</a></td>
+					<td>[<a href="./materials/lecture_notes/Lecture_11_Word_embedding.pdf">Slides</a>] <br> [<a
+							href="https://cuhko365-my.sharepoint.com/:f:/g/personal/wuzhizheng_cuhk_edu_cn/EkWiGYtWog5KiDVKJzwUo6YBG80UgOEkmvZk27aPbzYx5g?e=ciFnnG">Video</a>]
+					</td>
+					<td><b>Project proposal <font color="red">due (11:59pm)</font></b></td>
+				</tr>
+
+
+				<tr>
+					<td>Mar 7</td>
+					<td>Lecture 12: Embedding: Representations of the meaning of words</td>
+					<td><a href="https://web.stanford.edu/~jurafsky/slp3/6.pdf">Chapter 6: Vector Semantics and
+							Embeddings</a></td>
+					<td>[<a href="./materials/lecture_notes/Lecture_12_Word_embedding.pdf">Slides</a>] <br> [<a
+							href="https://cuhko365-my.sharepoint.com/:f:/g/personal/wuzhizheng_cuhk_edu_cn/EkWiGYtWog5KiDVKJzwUo6YBG80UgOEkmvZk27aPbzYx5g?e=ciFnnG">Video</a>]
+					</td>
+					<td> </td>
+				</tr>
+
+				<tr class="success">
+					<td>Mar 8</td>
+					<td>Tutorial 4: Word embedding</td>
+					<td> </td>
+					<td> [<a href="./materials/tutorials/Tut4_WordEmb.pdf">Slides</a>] <br> [<a
+							href="https://cuhko365-my.sharepoint.com/:v:/g/personal/222043002_link_cuhk_edu_cn/Ee-9mcHyv0dMqoloc6yf668B65ty_P_2gzEmipqf5PebHg?e=vs1JaV">Video</a>]
+						<br>
+						[<a
+							href="https://colab.research.google.com/drive/1TRQyU5MtWn9DTuFCnKjbI1cjxh2mh_KW?usp=sharing">Colab</a>]
+					</td>
+					<td> </td>
+				</tr>
+
+
+				<tr class="danger">
+					<td>Mar 9</td>
+					<td><b>
+							<font color="red">Midterm exam</font>
+						</b></td>
+					<td> </td>
+					<td> </td>
+					<td><b>Assignment 3 <font color="green">out</font></b></td>
+				</tr>
+
+
+				<tr>
+					<td nowrap>Mar 14</td>
+					<td>Word embedding</td>
+					<td> </td>
+					<td>[<a href="./materials/lecture_notes/">Slides</a>] <br> [<a
+							href="https://cuhko365-my.sharepoint.com/:f:/g/personal/wuzhizheng_cuhk_edu_cn/EkWiGYtWog5KiDVKJzwUo6YBG80UgOEkmvZk27aPbzYx5g?e=ciFnnG">Video</a>]
+					</td>
+					<td></td>
+				</tr>
+
+				<tr class="success">
+					<td>Mar 15</td>
+					<td>Tutorial 5: Visualization and plotting</td>
+					<td>
+						<a href="https://aclanthology.org/2022.acl-long.311.pdf">Case Study - Zoom Out and Observe:
+							News
+							Environment Perception for Fake News Detection</a>
+					</td>
+					<td>
+						[<a href="./materials/tutorials/Tut5_Visualization.pdf">Slides</a>]<br>
+						[<a
+							href="https://colab.research.google.com/drive/1sKAiDmvymnM4np5As3fcnPUtsPt7oaqn?usp=sharing">Colab</a>]<br>
+						[<a
+							href="https://cuhko365-my.sharepoint.com/:v:/g/personal/222042021_link_cuhk_edu_cn/EUCrBwhBexlNq73LOhIO89wBRAdsu2jkupn3O8KzkI5vvQ?e=CBodpg">Video</a>]
+					</td>
+					<td> </td>
+				</tr>
+
+				<tr>
+					<td>Mar 16</td>
+					<td>Lecture 13: SLP Application - Sentiment analysis</td>
+					<td> </td>
+					<td>[<a href="./materials/lecture_notes/Lecture_13_Affect_computing.pdf">Slides</a>] <br> [<a
+							href="https://cuhko365-my.sharepoint.com/:f:/g/personal/wuzhizheng_cuhk_edu_cn/EkWiGYtWog5KiDVKJzwUo6YBG80UgOEkmvZk27aPbzYx5g?e=ciFnnG">Video</a>]
+					</td>
+					<td> </td>
+				</tr>
+
+				<tr>
+					<td>Mar 21</td>
+					<td>Lecture 14: SLP Application - Text summarization</td>
+					<td> </td>
+					<td>[<a href="./materials/lecture_notes/">Slides</a>] <br> [<a
+							href="https://cuhko365-my.sharepoint.com/:f:/g/personal/wuzhizheng_cuhk_edu_cn/EkWiGYtWog5KiDVKJzwUo6YBG80UgOEkmvZk27aPbzYx5g?e=ciFnnG">Video</a>]
+					</td>
+					<td><b>Assignment 3 <font color="red">due (11:59pm)</font></b></td>
+				</tr>
+
+				<tr class="warning">
+					<td>Mar 22</td>
+					<td>Lecture 15: Summarizing Conversations: From Meetings to Social Media (by <a
+							href="https://sites.google.com/site/nancyfchen/home">Nancy Chen</a>)</td>
+					<td> </td>
+					<td></td>
+					<td><b>
+							<font color="green">Invited talk. Location: DY103, Time: 12-13</font>
+						</b></td>
+				</tr>
+
+				<tr class="warning">
+					<td>Mar 28</td>
+					<td>Lecture 16: SLP Application - Fundamentals of speech recognition (by <a
+							href="https://www.linkedin.com/in/xiong-xiao-0a6a9b29/">Xiong Xiao</a>)</td>
+					<td></td>
+					<td>[<a href="materials/lecture_notes/Xiao_Guest_lecture_ASR.pdf">Slides</a>]</td>
+					<td><b>
+							<font color="green">Invited guest lecture</font>
+						</b></td>
+				</tr>
+
+
+				<tr>
+					<td>Mar 30</td>
+					<td>Mid-term break</td>
+					<td> </td>
+					<td> </td>
+					<td><b> Project milestone 1 <font color="red"> due (11:59pm)</font></b></td>
+				</tr>
+
+				<tr>
+					<td>Apr 6</td>
+					<td>Lecture 17: SLP Application - Voice conversion(by <a href="https://wsstriving.github.io/">Shuai
+							Wang</a>)</td>
+					<td> </td>
+					<td>[<a href="./materials/lecture_notes/Wang_voice_conversion.pdf">Slides</a>]
+					</td>
+					<td> <b>
+							<font color="green">Invited guest lecture</font>
+						</b></td>
+				</tr>
+
+
+				<tr>
+					<td>Apr 11</td>
+					<td>Final project development </td>
+					<td>In-class office hour </td>
+					<td> </td>
+					<td> </td>
+				</tr>
+
+
+				<tr>
+					<td>Apr 13</td>
+					<td>Final project development</td>
+					<td>In-class office hour </td>
+					<td> </td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<td>Apr 18</td>
+					<td>Lecture 18: SLP Application - Text-to-speech synthesis</td>
+					<td> </td>
+					<td>[<a href="./materials/lecture_notes/Lecture_18_TTS.pdf">Slides</a>] <br> [<a
+							href="https://cuhko365-my.sharepoint.com/:f:/g/personal/wuzhizheng_cuhk_edu_cn/EkWiGYtWog5KiDVKJzwUo6YBG80UgOEkmvZk27aPbzYx5g?e=ciFnnG">Video</a>]
+					</td>
+					<td><b> Project milestone 2 <font color="red">due (11:59pm)</font></b></td>
+				</tr>
+
+
+
+				<tr>
+					<td>Apr 20</td>
+					<td>Lecture 19: SLP Application - Machine translation</td>
+					<td><a href="https://web.stanford.edu/~jurafsky/slp3/13.pdf">Chapter 13: Machine Translation</a>
+					</td>
+					<td>[<a href="./materials/lecture_notes/Lecture_19_Machine_translation.pdf">Slides</a>] <br> [<a
+							href="https://cuhko365-my.sharepoint.com/:f:/g/personal/wuzhizheng_cuhk_edu_cn/EkWiGYtWog5KiDVKJzwUo6YBG80UgOEkmvZk27aPbzYx5g?e=ciFnnG">Video</a>]
+					</td>
+					<td> </td>
+				</tr>
+
+
+				<tr>
+					<td>Apr 25</td>
+					<td>Lecture 20: SLP Application - Question answering</td>
+					<td><a href="https://web.stanford.edu/~jurafsky/slp3/14.pdf">Chapter 14: Question Answering</a></td>
+					<td>[<a href="./materials/lecture_notes/Lecture_20_Question_answering.pdf">Slides</a>] <br> [<a
+							href="https://cuhko365-my.sharepoint.com/:f:/g/personal/wuzhizheng_cuhk_edu_cn/EkWiGYtWog5KiDVKJzwUo6YBG80UgOEkmvZk27aPbzYx5g?e=ciFnnG">Video</a>]
+					</td>
+					<td> </td>
+				</tr>
+
+				<tr>
+					<td>Apr 27</td>
+					<td>Lecture 21: SLP Application - Chatbot</td>
+					<td><a href="https://web.stanford.edu/~jurafsky/slp3/15.pdf">Chapter 15: Chatbots and Dialogue
+							Systems</a></td>
+					<td>[<a href="./materials/lecture_notes/Lecture_21_Chatbot.pdf">Slides</a>] <br> [<a
+							href="https://cuhko365-my.sharepoint.com/:f:/g/personal/wuzhizheng_cuhk_edu_cn/EkWiGYtWog5KiDVKJzwUo6YBG80UgOEkmvZk27aPbzYx5g?e=ciFnnG">Video</a>]
+					</td>
+					<td></td>
+				</tr>
+
+
+				<tr class="warning">
+					<td>May 4</td>
+					<td>No class</td>
+					<td><a href="https://cuhko365-my.sharepoint.com/:v:/r/personal/wuzhizheng_cuhk_edu_cn/Documents/Courses/CSC3160/Recordings/how_to_write_final_report.mp4?csf=1&web=1&e=BXUOaX">How to write the final report?</a></td>
+					<td></td>
+					<td>
+						<b>Final project report <font color="green">early submission </font>
+							<font color="red">due (11:59pm)</font>
+						</b>
+					</td>
+				</tr>
+
+				<tr class="warning">
+					<td>May 9</td>
+					<td> No class </td>
+					<td> </td>
+					<td> </td>
+					<td></td>
+				</tr>
+
+
+				<tr>
+					<td>May 11</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td><b>Final project report <font color="red">due (11:59pm)</font></b></td>
+				</tr>
+
+				<tr class="danger">
+					<td nowrap>May 21</td>
+					<td><b>Final project poster session</b></td>
+					<td>
+						This session is open to the CUHK-Shenzhen community and invited guests. Details will be
+						available soon.
+						<br>
+						Time: 9am - 12:00pm for poster session, 1:30pm - 5:30pm for talks from external experts.
+						<br>
+						There will be companies offering full-time job and internship opportunities.
+					</td>
+					<td></td>
+					<td> </td>
+				</tr>
+
+
+			</tbody>
+		</table>
+	</div>
+
+	<div class="">
+		<div class="container sec"> </div>
+		<hr />
+	</div>
+
+	<!-- jQuery and Boostrap -->
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

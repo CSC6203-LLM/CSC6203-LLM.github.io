@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Tab icon and title -->
+	<title>CSC 6201/CIE 6021 Large Language Models</title>
+
+	<!-- bootstrap template -->
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/bootstrap-theme.min.css">
+
+	<!-- Google fonts -->
+	<link href="./css/font.css" rel="stylesheet" type="text/css">
+
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+
+	<div id="header">
+		<h1>CSC 6201/CIE 6021 Large Language Models </h1>
+		<!-- <h1> CIE 6021 Large Language Models</h1> -->
+		<div class="text-center">
+			<h4>Teaching C Bldg 208, Friday 13:30 - 16:30,  Sep. 4th - Dec. 15, 2023</h4>
+			<h4>Winter 2023</h4>
+		</div>
+	</div>
+
+	<div class="sechighlight">
+		<div class="container sec">
+			<div id="coursedesc">
+				This course offers a comprehensive study of Large Language Models (LLMs). We'll explore architecture engineering, training techniques, efficiency enhancements, and prompt engineering. Students will gain insights into the application of LLMs in various domains, tools integration, privacy and bias issues, as well as their limitations and alignment. The curriculum includes guest lectures on advanced topics and in-class presentations to stimulate practical understanding. This course is ideal for anyone seeking to master the use of LLMs in their field.
+				<br>
+				本课程提供对大语言模型（LLM）的全面学习。 我们将探索大模型的架构工程、提示工程、训练技术、效率提升。 学生将深入了解大语言模型在各个领域的应用、工具集成、隐私和偏见问题及其局限性和对齐。 该课程包括高级主题的客座讲座和课堂演示，以激发实践理解。 本课程对于任何想要掌握大语言模型在其领域的使用的人来说都是理想的选择。
+			</div>
+		</div>
+	</div>
+
+	<div class="container sec">
+		<div class="row">
+			<h2><b>Teaching team</b></h2>
+			<hr />
+			<div >
+				<div class="instructor">
+					<div class="instructorphoto"><img src="https://sds.cuhk.edu.cn/sites/sds.prod.dpsite03.cuhk.edu.cn/files/styles/w1200/public/2022-05/%E7%8E%8B%E6%9C%AC%E5%8F%8B%20%282%29_0.jpg"></div>
+					<div>Instructor <br> <a href="https://wabyking.github.io/old.html" target="_blank">Benyou Wang</a></div>
+				</div>
+			</div>
+
+			<div id="coursedesc">
+				<br/>
+				<p> Benyou Wang is an assistant professor in the School of Data Science, The Chinese University of Hong Kong, Shenzhen. He has achieved several notable awards, including the Best Paper Nomination Award in SIGIR 2017, Best Explainable NLP Paper in NAACL 2019, Best Paper in NLPCC 2022, Marie Curie Fellowship, Huawei Spark Award. His primary focus is on large language models.
+			</p>
+			</div>
+			<div class="col-md-2">
+				<div class="instructor">
+					<div class="instructorphoto"><img src="https://freedomintelligence.github.io/assets/img/xidongwang.jpeg"></div>
+					<div>Leading TA <br> <a href="https://github.com/wangxidong06" target="_blank">Xidong Wang</a></div>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div class="instructor">
+					<div class="instructorphoto"><img src="https://freedomintelligence.github.io/assets/img/juhaoliang.jpeg"></div>
+					<div>Leading TA <br><a href="https://github.com/JuhaoLiang1997" target="_blank">Juhao Liang</a></div>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div class="instructor">
+					<div class="instructorphoto"><img src="https://freedomintelligence.github.io/assets/img/junyingchen.jpeg"></div>
+					<div>TA <br><a href="https://jymchen.github.io/" target="_blank">Junying Chen</a></div>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div class="instructor">
+					<div class="instructorphoto"><img src="https://freedomintelligence.github.io/assets/img/zhengyangtang.jpg"></div>
+					<div>TA <br><a href="https://scholar.google.com/citations?user=2RRV0PQAAAAJ&hl=en" target="_blank">Zhengyang Tang</a></div>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div class="instructor">
+					<div class="instructorphoto"><img src="https://sds.cuhk.edu.cn/sites/sds.prod.dpsite03.cuhk.edu.cn/files/styles/crop_freeform/public/2022-10/%E4%BD%99%E8%8F%B2222043013.jpg"></div>
+					<div>TA <br><a href="https://sds.cuhk.edu.cn/node/719" target="_blank">Fei Yu</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="sechighlight">
+		<div class="container sec">
+			<h2><b>Poster Session</b></h2>
+			<hr />
+			<div id="coursedesc">
+				<p> A final project poster session is planned by the end of the course (tentatively Dec. 15th 2023). This
+					is to provide students the opportunities to present their wonderful work.
+				</p>
+				<p>Anyone interested in LLMs are welcome to join. More
+					details will be provided when it is close to the event. Feel free to reach out!</p>
+<!-- 				<br>
+				<br> -->
+<!-- 				<p>Here is the <a href="https://mp.weixin.qq.com/s/S6pJjM_aBnRFvR40IdAsmA">review</a> of the poster session event, with invited talks from industry.</p> -->
+			</div>
+		</div>
+	</div>
+
+	<div class="container sec">
+		<h2><b>Logistics</b></h2>
+		<hr />
+		<div id="coursedesc">
+			<p>
+			<ul>
+				<li> <b>Lectures:</b> are on Teaching C Bldg 208, Friday 13:30 - 16:30,  Sep. 4th - Dec. 15, 2023. </li>
+				<li> <b>Office hours</b> </li>
+				<ul>
+					<li>Benyou Wang: Friday 4:30-6:00 PM. Daoyuan Building 504A</li>
+					<li>Xidong Wang: Wednesday 7:30-8:30 PM. Daoyuan Building 223 (Seat-14) </li>
+					<li>Juhao Liang: Monday 4:00-5:00 PM. Daoyuan Building 223 (Seat-5) </li>
+
+				</ul>
+				<li> <b>Contact:</b> If you have any question, please reach out to us via email, WeChat group, or post it to BB.</li>
+				<!-- <a href="https://join.slack.com/t/csc3160mds6002/shared_invite/zt-1mnxl1sia-Kyqs7RsoMLAvsv8nHSOCHg">Slack</a>. Anyone is welcome to join the slack channel for discussion. -->
+			</ul>
+			</p>
+		</div>
+	</div>
+
+	<div class="sechighlight">
+		<div class="container sec">
+			<h2><b>Course Information</b></h2>
+			<hr />
+			<div id="coursedesc">
+				<p>
+					The course will introduce the key concepts in LLMs in terms of training, deployment, downstream applications. In the technical level, it covers language model, architecture engineering, prompt engineering, retrieval, reasoning, multimodality, tools, alignment and evaluations. This course will form a sound basis for further use of LLMs.
+
+					In particular, the topics include:
+					<ul>
+						<li> Introduction to Large Language Models (LLMs) - User's perspective </li>
+						<li> Language models and beyond</li>
+						<li> Architecture engineering and scaling law - Transformer and beyond </li>
+						<li> Training LLMs from scratch - Pre-training, SFT, learning LLMs with human feedback </li>
+						<li> Efficiency in LLMs </li>
+						<li> Prompt engineering </li>
+						<li> Knowledge and reasoning </li>
+						<li> Multimodal LLMs </li>
+						<li> LLMs in vertical domains</li>
+						<li> Tools and large language models</li>
+						<li> Privacy, bias, fairness, toxicity and holistic evaluation</li>
+						<li> Alignment and limitations</li>
+					</ul>
+
+				</p>
+			</div>
+
+			<h3>Prerequisites</h3>
+			<ul>
+				<li><b>Proficiency in LaTex: </b> All the reports need to be written by using LaTex. A template will be
+					provided. If you are not familiar with LaTex, please learn from the <a
+						href="https://www.overleaf.com/learn/latex/Tutorials" target="_blank">tutorial</a> in advance.
+				</li>
+				<li><b>Proficiency in GitHub: </b> All the source codes need to be submitted in GitHub. </li>
+				<li><b>Proficiency in Python:</b> All the assignments will be in Python (using Numpy and <a
+						href="https://pytorch.org/" target="_blank">PyTorch</a>). </li>
+				<li><b>Basic machine learning knowledge: </b> It is possible to take this course without any machine
+					learning knowledge, however, the course will be easier if you have foundations of machine learning.
+				</li>
+				<!-- <li><b>Basic Concepts of probability: </b> It will be easier for you to understand some lectures if you know basics of probability. </li> -->
+			</ul>
+
+
+			<h3>Learning Outcomes</h3>
+			<ul>
+				<li> <b>Knowledge</b>: a)	Students will understand basic concepts and principles of LLM; b)	Students could effectively use LLMs for daily study, work and research; and c) Students will know which tasks LLMs are suitable to solve and which are not. </li>
+				<li> <b>Skills</b>:	a)	Students could train a toy LLM following a complete pipeline and b)	Students could call ChatGPT API for daily usage in study, work and research. </li>
+				<li> <b>Valued/Attitude</b>: a)	Students will appreciate the importance of data; b)	Students will tend to use data-driven paradigm to solve problems; and c)	Students will be aware of the limitations and risks of using ChatGPT. </li>
+			</ul>
+
+
+
+			<h3>Textbooks</h3>
+			<p>
+				Recommended Books:
+			<ul id="textbooks">
+				<li> The course is too cutting-edge to have any textbooks, we might write a white paper during teaching this course. See  <a href="https://openai.com/blog" target="_blank">OpenAI Blogs</a> for lastest updates.</li>
+			</ul>
+			</p>
+
+			<h3>Grading Policy (CSC 6201/CIE 6021)</h3>
+			<h4>Assignments (40%)</h4>
+			<ul>
+				<li><b>Assignment 1 (20%)</b>: Using API for testing prompt engineering </li>
+				<li><b>Assignment 2 (20%)</b>: A toy LLM application</li>
+
+				Both assignments need a report and code attachment if it has coding. See the relevant evalution criterion as the final project. 
+			</ul>
+			<h4>Review of project proposal (15%)</h4>
+			<p>We will have a review for project proposals, to assist students better prepare their final projects. A revision is welcome after taking our suggestions into consideration.</p>
+
+			<h4>Final project (40%)</h4>
+			<p> The project could be done by a group but each indivisual is separately evaluated.    You need to write  a project report (max 6 pages) for the final project. 
+				Here is the <a href="https://www.overleaf.com/read/fvhykwvngdwz">report template</a>. You are also
+				expected to make a project poster presentation. After the final project
+				deadline, feel free to make your project open source; we  appreciate if you  acknowledge this course</p>
+			<ul>
+				<li><b>Project poster (10%)</b>: Your poster presentation will be rated by at least 3 experts
+						(TAs and at least one external professor or scientist from industry). The average rating will be the final credit.</li>
+					<ul>
+						<li><b> Poster quality (1%)</b>: We all like well-presented posters.  </li>
+						<li><b> Oral presentation (4%)</b>: Presenters are encouraged to speak clearly and with enthusiasm.  </li>
+						<li><b> Overall subjective assesment (5%)</b>: Although subjective assesment might be biased, it happens everywhere!  </li>
+					</ul>				
+				<li><b>Project report (30%)</b>: The project report will be publicly available after the final poster
+					session. Please let us know if you don't wish so.</li>
+				<ul>
+					<li><b>Technical excitement (10%)</b>: It is encouraged to do something that is either interesting or useful!  </li>
+					<li><b>Technical soundness (10%)</b>:  A) discuss the motivation on
+						why you work this project and your algorithm or approach. Even you are reproducing a published
+						paper, you should have your own motivation. B) Cite existing related work. C)  Present your algorithms or systems for your project. Provide
+						key information for reviewers to judge whether it is technically correct. D) Provide reasonable evaluation protocol, it should be detailed to contexualize your results; E)Report quantitative results and include qualitative evaluation. Analyze and understand your system by inspecting key outputs and intermediate results. Discuss
+						how it works, when it succeeds and when it fails, and try to interpret why it works and why not. </li>
+					<li><b>Clarity in writing (5%)</b>: The report is written in a precise and concise manner so the
+						report can be easily understood. </li>
+					<li><b>Indivisual contribution (5%)</b>: This is based on individual contribution, probably on a subjective basis. </li>
+				</ul>
+				<li><b>Bonus and penalty</b>  Note that the project credit is capped at 40%</li>
+				<ul>
+					<li><b>TA favorites (2%)</b>: If one of TAs  nominates the project as his/her favorite, the involved students would get 1% 	bonus credit. Each TA could nominate one and he or she could reserve his/her nomination. This credict could only be obtained once. 					</li>
+					<li><b>Instructor favorites (1%)</b>: If the instructor nominates the project as his/her favorite, the involved students would get 1% bonus credit. Instructor  could nominate at most three projects. One could get both TA  favorites and  Instructor favorites. 					</li>
+					<li><b>Project early-bird bonus (2%)</b>: If you submit the project report by the early submission due date, 2%
+						bonus credit will be entitled. </li>
+					<li><b>Code reproducibility bonus (1%)</b>: One could obtain this If TAs think they could easily reproduce your results based on the provide material.</li>
+					<li><b>Ethics concerns (-1%)</b>: If there are any serious ethics concerns by the ethics committee (The instructor and all TAs), the project would get 1% penalty. </li>
+				</ul>
+
+			</ul>
+			<h4>Participation (5%)</h4>
+			<p>Here are some ways to earn the participation credit, which is capped at 5%. </p>
+			<ul>
+				<li><b>Attending guest lectures</b>: In the second half of the course, we have four invited speakers. We
+					encourage students to attend the guest lectures and participate in Q&A. All students get 0.75% per
+					guest lecture (in total 3%) for either attending in person, or by writing a guest lecture report if
+					they attend remotely or watch the recording. </li>
+				<li><b>Completing feedback surveys</b>: We will send out two feedback surveys during the semester to
+				<li><b>User Study</b>: Students are welcone to conduct user study upon their interest; this is not mandatory (thus it does not affect final marks).</li>
+				<li><b>Course and Teaching Evaluation (CTE)</b>: The school will send requests for CTE to all students.
+					The CTE is worth 1% credit.</li>
+				<!-- 				<li><b>Slack participation</b>: The top 10 contributors (10 from CSC3100 and 10 from MDS6002) to slack will get 1%; others will get credit in propotion to the 10th contributor. </li>
+ -->
+				<li><b>Volunteer credit (1%)</b>: TAs/instuctor can nominate students for a volunteer credit for those
+					who help the poster session organization, or help answer questions from other students (not writing
+					assignments). </li>
+			</ul>
+
+			<h3>Late Policy</h3>
+			<p>The penalty is 0.5% off the final course grade for each late day.</p>
+		</div>
+	</div>
+
+
+	<div class="container sec">
+		<h2><b>Schedule</b></h2>
+		<hr />
+		<table class="table">
+			<tbody>
+				<tr class="active">
+	<th>Date</th>
+	<th>Topics</th>
+	<th>Recommended Reading</th>
+	<th>Pre-Lecture Questions</th>
+	<th>Lecture Note</th>
+	<th>Coding</th>
+	<th>Events Deadlines</th>
+	<th>Feedback Providers</th>
+</tr>
+
+<tr class="success">
+	<td> Sep. 4-15th <a style="color: red;">self-study; do not come to the classroom</a>  </td>
+	<td>Tutorial 0: GitHub, LaTeX, Colab, and  ChatGPT API</td>
+	<td>
+		<a href="https://openai.com/blog/chatgpt">OpenAI's blog</a><br>
+		<a href="https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes">LaTeX and Overleaf</a><br>
+		<a href="https://colab.research.google.com/">Colab</a><br>
+		<a href="https://docs.github.com/en/get-started/quickstart/hello-world/">GitHub</a><br>
+	</td>
+	<td></td>
+	<td></td>
+	<td>  </td>
+	<td></td>
+	<td>Benyou Wang</td>
+</tr>
+
+<tr>
+	<td>Sep. 15th</td>
+	<td>Lecture 1: Introduction to Large Language Models (LLMs)</td>
+	<td>
+		<a href="https://arxiv.org/abs/2108.07258">On the Opportunities and Risks of Foundation Models</a><br>
+		<a href="https://arxiv.org/abs/2303.12712">Sparks of Artificial General Intelligence: Early experiments with GPT-4</a>
+	</td>
+	<td>What is ChatGPT and how to use it?</td>
+	<td> [<a href="materials/lecture-1-introduction.pdf" >slide</a>]</td>
+	<td>   </td>
+	<td></td>
+	<td>Xidong Wang</td>
+</tr>
+
+
+
+<tr>
+	<td>Sep. 22nd</td>
+	<td>Lecture 2:  Language models and beyond</td>
+	<td>
+		<a href="https://dl.acm.org/doi/10.5555/944919.944966">A Neural Probabilistic Language Model</a><br>
+		<a href="https://arxiv.org/abs/1810.04805">BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding</a><br>
+		<a href="https://arxiv.org/abs/2203.02155">Training language models to follow instructions with human feedback</a>
+	</td>
+	<td>What is language model and why is it important?</td>
+	<td>[<a href="materials/lecture-2-language-model.pdf">slide</a>] </td>
+	<td> </td>
+	<td></td>
+	<td>Juhao Liang</td>
+</tr>
+
+				
+		
+
+<tr>
+	<td>Oct. 8th</td>
+	<td>Lecture 3: Architecture engineering and scaling law: Transformer and beyond</td>
+	<td>
+		
+		<a href="https://arxiv.org/abs/1706.03762">Attention Is All You Need</a><br>
+		<a href="https://huggingface.co/learn/nlp-course/chapter1/1">HuggingFace's course on Transformers</a><br>
+		<a href="https://arxiv.org/abs/2001.08361">Scaling Laws for Neural Language Models</a><br>
+		<a href="https://lilianweng.github.io/posts/2023-01-27-the-transformer-family-v2/">The Transformer Family Version 2.0</a><br>
+		<a href="https://openreview.net/forum?id=onxoVA9FxMw">On Position Embeddings in BERT</a>
+	</td>
+	<td>Why does Transformer become the backbone of LLMs?</td>
+	<td> [<a href="materials/lecture-3-architecture.pdf" >slide</a>]   </td>
+	<td> [<a href="https://github.com/karpathy/nanoGPT">nanoGPT</a>] </td>
+	<td></td>
+	<td>Xidong Wang</td>
+</tr>
+
+
+
+
+<tr class="success">
+	<td>Oct. 13th </td>
+	<td>Tutorial 1: Usage of OpenAI API and Assignment 1</td>
+	<td>
+		<a href="https://openai.com/blog/chatgpt">OpenAI's blog</a><br>
+		
+	</td>
+	<td>How to automatically use ChatGPT in a batch?</td>
+	<td> [<a href="/materials/Tutorial1-1-ChatgptAPI.pdf" >slide</a>] </td>
+	<td> [<a href="https://github.com/LLM-Course/LLM-course.github.io/tree/main/Assignments/Assignment1">Using ChatGPT API</a>]  </td>
+	<td> <b>Assignment 1 <font color="green">out</font></b> </td>
+	<td>Xidong Wang</td>
+</tr>
+
+
+
+
+  <tr>
+    <td>Oct. 20th</td>
+    <td>Lecture 4: Training LLMs from scratch</td>
+    <td>
+      <a href="https://arxiv.org/abs/2203.02155">Training language models to follow instructions with human feedback</a><br>
+      <a href="https://arxiv.org/abs/2302.13971">LLaMA: Open and Efficient Foundation Language Models</a><br>
+      <a href="https://arxiv.org/abs/2307.09288">Llama 2: Open Foundation and Fine-Tuned Chat Models</a>
+    </td>
+    <td>How to train LLMs from scratch?</td>
+    <td>[<a href="/materials/Lecture4-TrainingLLMs.pdf" >slide</a>] </td>
+    <td>[<a href="https://github.com/FreedomIntelligence/LLMZoo">LLMZoo]</a>, 
+      [<a href="https://github.com/FreedomIntelligence/LLMFactory">LLMFactory</a>] </td>
+    <td></td>
+    <td>Juhao Liang</td>
+  </tr>
+
+
+  <tr class="success">
+    <td>Oct. 20th</td>
+    <td>Tutorial 2: train your own LLMs and assignment 2</td>
+    <td>
+    </td>
+    <td>Are you ready to train your own LLMs?</td>
+    <td>    </td>
+    <td>[<a href="https://github.com/FreedomIntelligence/LLMZoo">LLMZoo]</a>,  [<a href="https://github.com/karpathy/nanoGPT">nanoGPT</a>],
+      [<a href="https://github.com/FreedomIntelligence/LLMFactory">LLMFactory</a>] </td>
+    <td> </td>
+    <td>Juhao Liang</td>
+  </tr>
+
+
+  <tr>
+    <td>Oct. 27th</td>
+    <td>Lecture 5: Efficiency in LLMs</td>
+    <td>
+      <a href="https://arxiv.org/abs/2009.06732">Efficient Transformers: A Survey</a><br>
+      <a href="https://arxiv.org/abs/2205.14135">FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness</a><br>
+      <a href="https://arxiv.org/abs/2210.17323">GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers</a><br>
+      <a href="https://arxiv.org/pdf/2101.03961.pdf">Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity</a><br>
+      <a href="#">Towards a Unified View of Parameter-Efficient Transfer Learning</a>
+    </td>
+    <td>How to make LLMs train/inference faster?</td>
+    <td>  [<a href="materials/Lecture-5-Efficiency.pdf" >slide</a>]  </td>
+    <td>[<a href="https://github.com/karpathy/llama2.c">llama2.c</a>]</td>
+
+    <td><b>Assignment 1 <font color="red">due (Oct. 31, 11:59pm)</font></b></td>
+    <td>Zhengyang Tang</td>
+  </tr>
+
+<!--   <tr>
+    <td>Nov. 3rd</td>
+    <td>Lecture 6: Prompt engineering and ICL</td>
+    <td>
+      <a href="https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api">Best practices for prompt engineering with OpenAI API</a><br>
+      <a href="https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/">prompt engineering</a>
+    </td>
+    <td>What is in-context learning and how to better prompt LLMs?</td>
+    <td> </td>
+    <td></td>
+    <td></td>
+    <td>Juhao Liang</td>
+  </tr>
+ -->
+  <tr>
+    <td>Nov. 3rd </td>
+    <td>Lecture 6:  Mid review of final project</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td> [<a href="materials/lecture-6-mid-review.pdf" >slide</a>]  </td>
+    <td> </td>
+    <td><b>Assignment 2 <font color="green">out</font></b><br> </td>
+    <td>Benyou Wang</td>
+</tr>
+
+<tr class="success">
+    <td>Nov. 3rd </td>
+    <td>Tutorial 3: preparing your own project</td>
+    <td>
+    </td>
+    <td>Any ideas to train a unique  LLM to solve problems in your own research field?</td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td>Junyin Chen</td>
+  </tr>
+
+<tr>
+    <td>Nov. 10th</td> 
+    <td>Lecture 7: Knowledge, Reasoning, and Prompt engineering</td>
+    <td>
+    	<a href="https://arxiv.org/abs/2303.14725">Natural Language Reasoning, A Survey</a> and others<br>
+    	<a href="https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api">Best practices for prompt engineering with OpenAI API</a><br>
+    	<a href="https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/">prompt engineering</a>
+    </td>
+    <td>Can LLMs reason? how to better prompt LLMs?</td>
+    <td>[<a href="materials/Lecture-7-Knowledge-and-Reasoning.pdf" >slide</a>] </td>
+    <td></td>
+    <td></td>
+    <td>Shuo Yan and Fei Yu</td>
+</tr>
+
+<tr>
+    <td>Nov. 17th</td>
+    <td>Lecture 8: Multimodal LLMs</td>
+    <td><a href="https://arxiv.org/pdf/2103.00020.pdf">CLIP</a>, <a href="https://arxiv.org/abs/2304.10592">MiniGPT-4</a>, <a href="https://stablediffusionweb.com/">Stable Diffusion</a> and others</td>
+    <td>Can LLMs see?</td>
+    <td> [<a href="materials/Lecture 8_ Multimodal_LLMs.pdf" >slide</a>] </td>
+    <td></td>
+    <td> <b>Assignment 2 <font color="red">due (11:59pm)</font></b> </td>
+    <td>Junying Chen</td>
+</tr>
+
+
+
+<tr>
+    <td>Nov. 24th</td>
+    <td>Lecture 9: LLM agent</td>
+    <td>
+      <a href="https://github.com/OpenBMB/ToolBench">ToolBench</a><br>
+      <a href="https://arxiv.org/abs/2308.03688">AgentBench</a><br>
+      <a href="https://arxiv.org/pdf/2005.11401.pdf">Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks</a><br>
+      <a href="https://lilianweng.github.io/posts/2023-06-23-agent/">LLM Powered Autonomous Agents</a>
+    </td>
+    <td>Can LLMs plan?</td>
+    <td> [<a href="materials/Lecture-9-LLM-Agents.pdf" >slide</a>]  </td>
+    <td></td>
+    <td></td>
+    <td>Juhao Liang</td>
+  </tr>
+
+  <tr class="success">
+    <td>Nov. 24th </td>
+    <td>Tutorial 4: Improving your LLM projects (Personal Discussion)</td>
+    <td>
+    </td>
+    <td>How to improve your LLM applications?</td>
+    <td> </td>
+    <td> </td>
+    <td><b>Project proposal <font color="red">due (11:59pm)</font></b>  </td>
+    <td>Benyou Wang, Juhao Liang and Xidong Wang</td>
+ </tr>
+
+
+<tr>
+    <td>Dec. 1st</td>
+    <td>Lecture 10: LLMs in vertical domains</td>
+    <td><a href="https://arxiv.org/abs/2212.13138">Large Language Models Encode Clinical Knowledge</a>, <a href="https://arxiv.org/abs/2303.13375">Capabilities of GPT-4 on Medical Challenge Problems</a>, <a href="https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0000198">Performance of ChatGPT on USMLE</a>, <a href="https://github.com/FreedomIntelligence/Medical_NLP">Medical-NLP</a>, ChatLaw</td>
+    <td>Can LLMs be mature experts like doctors/lawyers?</td>
+    <td>   [<a href="materials/Lecture-10-Vertical-LLMs.pdf" >slide</a>]  </td>
+    <td>[<a href="https://github.com/FreedomIntelligence/HuatuoGPT">HuatuoGPT</a>]</td>
+    <td></td>
+    <td>Junying Chen</td>
+</tr>
+
+
+
+   <tr>
+    <td>Dec. 8th</td>
+    <td>Lecture 11: Alignment, Limitations, and broader Impact</td>
+    <td>
+      <a href="https://openai.com/blog/introducing-superalignment">Superalignment</a><br>
+      <a href="https://arxiv.org/abs/2303.10130">GPTs are GPTs: An Early Look at the Labor Market Impact Potential of Large Language Models</a><br>
+      <a href="https://arxiv.org/abs/2303.15056">ChatGPT Outperforms Crowd-Workers for Text-Annotation Tasks</a><br>
+      <a href="https://arxiv.org/abs/2302.02083">Theory of Mind Might Have Spontaneously Emerged in Large Language Models</a>
+      <a href="https://dl.acm.org/doi/pdf/10.1145/3442188.3445922">On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?</a><br>
+      <a href="https://arxiv.org/abs/2202.03629">Survey of Hallucination in Natural Language Generation</a><br>
+      <a href="https://arxiv.org/pdf/2012.07805.pdf">Extracting Training Data from Large Language Models</a>
+    </td>
+    <td>What are LLMs' limitations?</td>
+    <td> </td>
+    <td></td>
+    <td></td>
+    <td>Juhao Liang</td>
+  </tr>
+
+    <tr class="success">
+        <td>TBD</td>
+        <td>Guest lectures</td>
+        <td>N/A</td>
+        <td></td>
+        <td> </td>
+        <td></td>
+        <td></td>
+        <td>Benyou Wang</td>
+    </tr>
+
+    <tr>
+        <td>Dec. 15</td>
+        <td>Lecture 12: In-class presentation (extended class)</td>
+        <td>N/A</td>
+        <td>How to solve real-world problems using LLMs</td>
+        <td> </td>
+        <td></td>
+        <td></td>
+        <td>Zhengyang Tang, Juhao Liang and Xidong Wang</td>
+    </tr>
+
+
+
+			</tbody>
+		</table>
+	</div>
+
+	<div class="">
+		<div class="container sec"> </div>
+		<hr />
+	</div>
+
+	<!-- jQuery and Boostrap -->
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+<div class="container sec">
+		<h2><b>Acknowledgement</b></h2>
+		<hr /> https://github.com/LLM-Course/LLM-course.github.io
+		<p> We borrowed some concepts and the website template from  <a href="https://slpcourse.github.io/">[CSC3160/MDS6002] </a>  where Prof. Zhizheng Wu is the instructor.</p>
+		<p> Website github repo is <a href="https://github.com/LLM-Course/LLM-course.github.io">[here] </a>.</p>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+CSC3160 Fundamentals of Speech and Language Processing
+MDS6002 Natural Language Processing
+Spring 2023
+The difference between speech and language processing and other data processing is the use of knowledge of language. In this course, we will study how to describe, process and compute different levels of language knowledge including Phonetics and Phonology, Morphology, Syntax, Semantics, and how the language knowledge is used in speech and language applications such as named entities recognition, information extraction, question answering, speech recognition, and speech synthesis.
+Teaching team
+
+Instructor
+Zhizheng Wu
+
+TA
+Xi Chen
+
+TA
+Xueyao Zhang
+Poster Session
+A final project poster session is planned by the end of the course (tentatively May 20th 2023). This is to provide students the opportunities to connect with speech and language research/industry community.
+
+Anyone from the CUHK-Shenzhen and speech and language technology community are welcome to join. More details will be provided when it is close to the event. Feel free to reach out!
+
+Logistics
+Lectures: are on Tuesday/Thursday 4:00PM - 5:20PM in TB103. Note: lectures will be remote for the first two weeks, and hybrid afterwards. The Zoom link is posted on BB.
+Office hours
+Zhizheng Wu: Thu 2:30-3:30 PM. Daoyuan Building 321b
+Xi Chen: Wed 7-9PM. SDS Research Lab (4th Floor, Zhi Xin Building) Seat No.100
+Xueyao Zhang: Wed 7-9PM. SDS Research Lab (4th Floor, Zhi Xin Building) Seat No.78
+Contact: If you have any question, please reach out to us via email or post it to BB.
+Course Information
+This course is designed as the first course for students who are interested in speech and language technology. The first half of the course focuses on the fundamentals and introduces tools for students to use, and the second half emphasises on applications, giving students the opportunity to know how speech and language technology could impact human life. In particular, the topics include:
+
+Understanding human speech: spectrogram, fundamental frequency, formant, etc
+Human sounds and their organization
+Words and their relationship to other words
+Syntax: Structure of sentences
+Text processing and regular expressions
+Language models
+Embedding: Representations of the meaning of words
+Word classifications and Named entities recognition
+Applications: speech recognition, speech synthesis, machine translation, chatbot, etc
+Prerequisites
+Proficiency in LaTex: All the reports need to be written by using LaTex. A template will be provided. If you are not familiar with LaTex, please learn from the tutorial in advance.
+Proficiency in GitHub: All the source codes need to be submitted in GitHub.
+Proficiency in Python: All the assignments will be in Python (using Numpy and PyTorch).
+Basic machine learning knowledge: It is possible to take this course without any machine learning knowledge, however, the course will be easier if you have foundations of machine learning.
+Basic Concepts of probability: It will be easier for you to understand some lectures if you know basics of probability.
+Textbooks
+Recommended Books:
+Speech and Language Processing (3rd ed. draft), by Dan Jurafsky and James H. Martin
